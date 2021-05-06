@@ -10,16 +10,18 @@
 #define PIN_RUECKWAERTS 4
 #define PIN_HALL_A 7
 #define PIN_HALL_B 2
-#define PIN_GEN_A_POSITIV 3
-#define PIN_GEN_A_NEGATIV 8
-#define PIN_GEN_B_POSITIV 12
-#define PIN_GEN_B_NEGATIV 13
+#define PIN_GEN_HALL_A 3
+#define PIN_GEN_HALL_B 12
 #define PIN_REKUPERATION 9
 
 #define APIN_GENERATORLEISTUNG 0
 #define APIN_UNTERSTUETZUNG 1
 #define APIN_TRETWIDERSTAND 2
 #define APIN_BREMSHEBEL 3
+
+//Pins fuer spaetere Erweiterungen, die bereits am Stecker verbunden sind
+//#define PIN_AUX_1 13
+//#define PIN_AUX_2 5
 
 #define GESCHWINDIGKEIT_ERMITTELN_INTERVAL 5 //mal pro Sekunde
 #define MOTORSTEUERUNG_INTERVAL 20 //mal pro Sekunde
@@ -56,13 +58,11 @@ void setup() {
   pinMode(PIN_HALL_A, INPUT);
   pinMode(PIN_HALL_B, INPUT);
 
-  pinMode(PIN_GEN_A_POSITIV, INPUT_PULLUP);
-  pinMode(PIN_GEN_A_NEGATIV, INPUT_PULLUP);
-  pinMode(PIN_GEN_B_POSITIV, INPUT_PULLUP);
-  pinMode(PIN_GEN_B_NEGATIV, INPUT_PULLUP);
+  pinMode(PIN_GEN_HALL_A, INPUT);
+  pinMode(PIN_GEN_HALL_B, INPUT);
 
   attachInterrupt(digitalPinToInterrupt(PIN_HALL_A), motorHallISR, CHANGE);
-  attachInterrupt(digitalPinToInterrupt(PIN_GEN_A_POSITIV), generatorISR, CHANGE);
+  attachInterrupt(digitalPinToInterrupt(PIN_GEN_HALL_A), generatorISR, CHANGE);
 
 }
 
