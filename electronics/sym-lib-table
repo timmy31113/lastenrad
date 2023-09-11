@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Lastenrad")(type "KiCad")(uri "${KIPRJMOD}/Lastenrad.kicad_sym")(options "")(descr ""))
+)
