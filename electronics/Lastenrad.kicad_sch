@@ -4,6 +4,10 @@
 	(generator_version "9.0")
 	(uuid "1eb43f8e-8939-44a8-a4ee-7ef2313b0ff1")
 	(paper "A3")
+	(title_block
+		(date "2025-06-13")
+		(rev "PS1")
+	)
 	(lib_symbols
 		(symbol "Connector:Conn_Coaxial_Power"
 			(pin_names
@@ -4346,6 +4350,26 @@
 			)
 			(embedded_fonts no)
 		)
+	)
+	(text "V_GS = 6,5 V"
+		(exclude_from_sim no)
+		(at 38.354 115.316 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "7f48a025-0c83-4509-a637-eed5ae39adb3")
+	)
+	(text "5 V Hall -> 3.3 V Arduino"
+		(exclude_from_sim no)
+		(at 231.648 163.576 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c60c79a3-ee61-4d7c-b533-aee072abafa1")
 	)
 	(junction
 		(at 72.39 44.45)
@@ -9164,7 +9188,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "22k"
 			(at 36.703 108.458 0)
 			(effects
 				(font
@@ -9232,7 +9256,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "10k"
 			(at 226.568 137.033 0)
 			(effects
 				(font
@@ -9300,7 +9324,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "22k"
 			(at 226.568 147.193 0)
 			(effects
 				(font
@@ -9369,7 +9393,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "100k"
 			(at 26.543 108.458 0)
 			(effects
 				(font
@@ -9642,7 +9666,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "R_Potentiometer"
+		(property "Value" "10k"
 			(at 99.568 265.303 0)
 			(effects
 				(font
@@ -9713,7 +9737,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "R_Potentiometer"
+		(property "Value" "10k"
 			(at 122.428 265.303 0)
 			(effects
 				(font
@@ -9784,7 +9808,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "R_Potentiometer"
+		(property "Value" "10k"
 			(at 149.098 265.303 0)
 			(effects
 				(font
@@ -9855,7 +9879,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "10k"
 			(at 240.538 137.033 0)
 			(effects
 				(font
@@ -9923,7 +9947,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "22k"
 			(at 240.538 147.193 0)
 			(effects
 				(font
@@ -11316,7 +11340,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "100nF"
 			(at 321.691 200.533 0)
 			(effects
 				(font
@@ -11384,7 +11408,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "1nF"
 			(at 282.321 217.043 0)
 			(effects
 				(font
