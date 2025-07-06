@@ -8,6 +8,7 @@
 *.bck
 *.kicad_pcb-bak
 *.sch-bak
+*-backups/
 
 # KiCad generated files
 *.erc
